@@ -14,12 +14,12 @@ public class Client
 		StudentService service = new StudentServiceImpl();
 		Student student = new Student();
 		// Create Operation
-		student.setStudentId(111);
-		student.setName("akash");
+		student.setStudentId(100);
+		student.setName("yeshwant");
 		service.addStudent(student);
 		//at this breakpoint, we have added one record to table
 		// Retrieve Operation
-		student = service.findStudentById(100);
+		student = service.findStudentById(111);
 		System.out.print("ID:"+student.getStudentId());
 		System.out.println(" Name:"+student.getName());
 		// Update Operation
